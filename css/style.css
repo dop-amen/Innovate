@@ -1,0 +1,379 @@
+/* common css start */
+*{
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+}
+h1,h2,h3,h4,h5,h6,p,a{
+    margin: 0;
+    padding: 0;
+    line-height: 0.8;
+}
+ul,ol{
+    list-style: none;
+}
+/* common css end */
+
+/* =====STICKY CSS START=====  */
+.sticky_header{
+    background: #6A55EA;
+    animation: sticko 1s;
+    -webkit-animation: sticko 1s;
+}
+@keyframes sticko {
+    from{
+        top: -100px;
+    }
+    to{
+        top: 0;
+    }
+} 
+.navbar{
+    position: fixed;
+    width: 100%;
+}
+/* =====STICKY CSS END=====  */
+
+.navbar-nav a{
+    color: white;
+    font-weight: 600;
+}
+.navbar-nav a:hover{
+    color: #ffffff;
+}
+.nav-item{
+    padding: 0 25px;
+}
+.nav-links{
+    position: relative;
+}
+.nav-links::before{
+    bottom: -3px;
+    left: 0;
+    height: 3px;
+    width: 0;
+    position: absolute;
+    content: "";
+    background: #ffffff;
+    transition: 0.3s;
+}
+.nav-links:hover::before{
+    width: 100%;
+}
+.one{
+    border: 1px solid white;
+    color: white;
+    border-radius: 15px;
+    transition: .3s;
+}
+.one:hover{
+    background: white;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: rgb(0, 0, 75);
+}
+.dropdown-menu{
+    background: #6A55EA;
+}
+
+/* navbar css end  */
+
+/* Banner css start  */
+#bannerPart{
+background: url(../images/Group\ 155.png);
+background-repeat: no-repeat;
+background-size: cover;
+background-position: center;
+}
+.bannerItems{
+    padding: 20px 0 52px;
+}
+.lils{
+    justify-content: center;
+    margin-top: 100px;
+}
+.lilone{
+    padding: 20px;
+}
+.lils button{
+    border: 1px solid #b8b8b8;
+    background: #6955ea00;
+    padding: 6px 15px;
+    color: rgb(183, 183, 183);
+    border-radius: 15px;
+    transition: 0.4s;
+}
+.lils button:hover{
+    border: 1px solid #6A55EA;
+    background: #6A55EA;
+    color: white;
+
+}
+
+.texts{
+    color: white;
+    font-family: 'poppins', sans-serif;
+    text-align: center;
+}
+
+.texts h1{
+    font-size: 55px;
+    font-weight: 700;
+    padding: 0px 128px 30px;
+    line-height: 69px;
+}
+.texts p{
+    font-size: 14px;
+    font-weight: 300;
+    color: #b8b8b8;
+    padding: 0 316px 33px;
+    line-height: 31px;
+}
+
+
+.two{
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border: 1px solid #b8b8b8;
+    color: rgb(230, 230, 230);
+    height: 70px;
+    padding: 0 30px;
+}
+.two:hover{
+    border: 1px solid #6A55EA;
+    background: #6A55EA;
+    color: white;
+}
+.form-control{
+    max-width: 30%;
+    height: 70px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+.input-group{
+    justify-content: center;
+    font-family: "Nunito", sans-serif;
+}
+
+.logos img{
+    width: 200px;
+}
+.company{
+    justify-content: center;
+    margin-top: 500px;
+}
+/* Banner css end  */
+
+/* service css start  */
+#servicePart{
+    font-family: 'poppins', sans-serif;
+}
+.serviceItems h2,p{
+    text-align: center;
+}
+.serviceItems p{
+    color: #6A55EA;
+    margin-bottom: 20px;
+}
+.serviceItems h2{
+    color: #29313D;
+    font-size: 48px;
+    font-weight: 600;
+    padding: 0 310px;
+    line-height: 130%;
+}
+
+.boxes{
+    padding: 60px 0;
+}
+
+.boxes p{
+    font-size: 15px;
+    line-height: 200%;
+    text-align: left;
+    color: #29313D;
+    padding-right: 90px;
+}
+.lefty img{
+    max-width: 535px;
+    margin-top: 20px;
+}
+.tabIcon img{
+    max-width: 90px;
+    margin-left: 20px;
+}
+.tabtext{
+    margin-left: -25px;
+}
+.tabText h3{
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 140%;
+}
+.tabs{
+    padding: 20px 0 7px;
+    background: #F0EDFF;
+    margin-bottom: 29px;
+    border-radius: 15px;
+}
+.orange{
+    background: #FEF6EC;
+}
+.green{
+    background: #E8FCF2;
+}
+/* service css end  */
+
+/* traffic css start  */
+.traffic{
+    font-family: 'poppins', sans-serif;
+    margin-top: 30px;
+}
+.traffic img{
+    max-width: 535px;
+    margin-top: 20px;
+}
+.traffic span{
+    color: #6A55EA;
+    margin-bottom: 20px;
+}
+.traffic h2{
+    text-align: left;
+    color: #29313D;
+    font-size: 48px;
+    font-weight: 600;
+    line-height: 180%;
+}
+.traffic p{
+    font-size: 15px;
+    line-height: 200%;
+    text-align: left;
+    color: #29313D;
+    padding-right: 90px;
+}
+/* traffic css end  */
+
+/* help css start  */
+.how{
+    font-family: 'poppins', sans-serif;
+    margin-top: 100px;
+}
+.how p{
+    color: #6A55EA;
+    margin-bottom: 20px;
+}
+.how h2{
+    color: #29313D;
+    font-size: 48px;
+    font-weight: 600;
+    line-height: 130%;
+    text-align: center;
+}
+/* help css end  */
+
+/* hTabs css start  */
+.hTabs p{
+    font-family: 'poppins', sans-serif;
+    color: #29313D;
+    font-size: 21px;
+    font-weight: 500;
+    line-height: 140%;
+    padding: 27px;
+    border: 2px solid #6A55EA;
+    margin: 50px 0 30px;
+    border-radius: 50px;
+    transition: 0.4s;
+}
+#one:hover{
+    background: #ffe2b3;
+}
+#too:hover{
+    background: #6048f94d;
+}
+#three:hover{
+    background: #b3ffc7;
+}
+#four:hover{
+    background: #ffb3b3;
+}
+/* hTabs css end  */
+
+/* analyt css start */
+.analyt{
+    margin: 70px 0;
+}
+.heximage img{
+    padding: 0 64px 0;
+}
+.texta{
+    font-family: 'poppins', sans-serif;
+}
+.texta h3{
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 140%;
+}
+.texta p{
+    font-size: 15px;
+    line-height: 200%;
+    text-align: left;
+    color: #29313D;
+    margin-top: 20px;
+    padding-right: 90px;
+}
+.texta button{
+    border: 2px solid #6A55EA;
+    padding: 20px 25px;
+    border-radius: 50px;
+    background: white;
+    margin-top: 80px;
+    transition: 0.4s;
+}
+.texta button:hover{
+    background: #6d64ee;
+    color: white;
+}
+/* analyt css end */
+
+/* footer css start  */
+#footer{
+    background: #e6fafa;
+    padding: 200px 0 70px;
+}
+.footext h4{
+    margin-left: 30px;
+}
+.footext ul{
+    margin-top: 30px;
+}
+.footext li{
+    line-height: 30px;
+}
+.footext a{
+    color: #29313D;
+}
+.promo{
+    width: 45%;
+}
+.promo p{
+    line-height: 146%;
+    text-align: left;
+    margin-top: 20px;
+    padding-right: 125px;
+}
+.features{
+    width: 20%;
+}
+.products{
+    width: 15%;
+}
+.support{
+    width: 15%;
+}
+
+/* footer css end  */
